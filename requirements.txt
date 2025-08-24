@@ -1,0 +1,10 @@
+mistralai
+openai
+google-generativeai
+anthropic
+python-dotenv
+pillow
+pdf2image
+PyMuPDF
+requests
+markdown
