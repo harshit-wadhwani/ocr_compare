@@ -230,27 +230,6 @@ def main():
     else:
         st.info("Upload a PDF to begin.")
 
-    # Footer
-    st.markdown("---")
-    st.write("**Notes:**")
-    st.write("- **Docling** is best for digital PDFs (embedded text). For scanned PDFs or mixed layouts, use OCR via Vision LLMs.")
-    st.write("- **Mistral OCR** provides direct PDF processing with image extraction capabilities.")
-    st.write("- **Vision Models** (OpenAI, Claude, Gemini) process PDFs by converting to images first and support custom prompts.")
-    st.write("- **Custom Prompts** allow you to change how vision models interpret your PDFs (e.g., extract only tables, focus on specific content, etc.).")
-    st.write("- Increase DPI if small text is missed, but it will be slower and cost more tokens/compute.")
-    st.write("- Per-page caching is enabled to avoid reprocessing the same PDF with the same model and prompt.")
-
-    # Model suggestions
-    with st.expander("Popular Model Names"):
-        st.write("**OpenAI Models:**")
-        st.code("gpt-4o, gpt-4o-mini, gpt-4-vision-preview")
-        
-        st.write("**Claude Models:**")
-        st.code("claude-3-5-sonnet-latest, claude-3-5-haiku-latest, claude-3-opus-latest")
-        
-        st.write("**Gemini Models:**")
-        st.code("gemini-2.5-pro, gemini-1.5-pro, gemini-1.5-flash")
-
     # Prompt examples
     with st.expander("Custom Prompt Examples"):
         st.write("**Extract Only Tables:**")

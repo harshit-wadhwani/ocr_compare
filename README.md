@@ -59,3 +59,6 @@ A  Streamlit application for comparing different OCR (Optical Character Recognit
    - View results from all selected providers
    - Download Markdown outputs
 
+## Screenshot
+
+![OCR Compare Screenshot](./screenshots/Screenshot%202025-08-25%20020056.png)
